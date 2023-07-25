@@ -1,0 +1,44 @@
+Every Object in git has its own SHA-1.(hash key)
+
+Directories and commits have their own HASH.
+
+SHA1 hashes are 20 bytes in hex form, therefore sequence of 
+40 hex digits.
+
+Can hashes collide ?
+    Its possible as we have finite number of hash values but 
+    this number is very,very ,very large.
+
+    So for all practical purposes, SHA-1 hashes are unique.
+
+    SHA-1s are unique in the universe. This is an important
+    notion to keep in mind when thinking about distribution.
+
+
+Git is a map where keys are hashes and values are pieces of 
+content.
+
+To see all the hash keys generated for a project, go to 
+.git/objects/.. 
+This gives all hash keys as blob of data where the folder 
+is saved as first 2 letters of sequence and rest are saved 
+as name of the file inside this folder. We can't directly 
+open this file.
+    Command- 
+        git cat-file <hash key> argument
+        git cat-file 690c488e711ab660f8d1177a2f0d0bd20bc75c18 -p
+        /*-> tree 867f21c18f2c24f0bad3f039891ef3d08820b798
+            author Rohan Saxena <rohansaxena1003@gmail.com> 1690267849 +0530
+            committer Rohan Saxena <rohansaxena1003@gmail.com> 1690267849 +0530
+        */
+
+Read me
+        argument -t for type 
+        use -p for pretty print 
+
+
+Persistence of git
+    Git takes a piece of content, generates the key for it, as 
+    hash, and then PERSISTS the content to the repository[ as a 
+    blob, commit etc.]. This is a 'Persistant Map', the very basic
+    of the git model.

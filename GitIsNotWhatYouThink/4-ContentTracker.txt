@@ -1,0 +1,16 @@
+We don't see git as just a map, but much more than that, 
+we see it as a tool to track our files and directories, 
+that is , as a 'Content Tracker'.
+
+BLOB 
+    A blob is really not a file. A blob is the content of the file.
+    The file name and file permissions are not stored in the blob.
+    They are stored in the tree that points to the blob.
+
+If you have same content as somebody elses', then you get the 
+same hash.
+
+A commit is also just a piece of content like the content of our 
+blob. As we have different content for each commit(like date-time,
+author name etc.), therefore we get a different hash for each 
+commit.

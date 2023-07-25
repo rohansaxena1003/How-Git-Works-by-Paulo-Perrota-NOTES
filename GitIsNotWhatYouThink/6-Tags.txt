@@ -1,0 +1,7 @@
+Components of GIT object database
+    1.  BLOBS
+    2.  Trees(equivalent of directories) 
+    3.  Commits 
+    4.  Annotated Tags 
+
+Tags - Its like a label you put on a commit.
