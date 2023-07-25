@@ -1,0 +1,6 @@
+Understanding working of git is essential to be able to work with it with ease.
+We will learn how and why the commands work.
+
+Prerequisites
+    1. Basics of git 
+    2. Stage files, commit them, switch branches.
