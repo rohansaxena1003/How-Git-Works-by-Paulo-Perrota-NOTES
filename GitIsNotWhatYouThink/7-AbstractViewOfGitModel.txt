@@ -1,0 +1,10 @@
+Blobs contain data.
+Trees contains blobs and other trees.
+The entire git structure is recursive.
+The name of the blobs and trees are not in the blob or tree 
+itself. Instead they are stored in the containing trees(parent 
+tree). So you can have a particular blob(or tree) pointed to 
+at by multiple parent trees.
+
+So, Git is a high level file system built on top of your native
+file system.

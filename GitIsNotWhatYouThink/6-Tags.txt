@@ -1,7 +1,14 @@
-Components of GIT object database
-    1.  BLOBS
+All the Components of GIT object database
+    1.  BLOBS(the content)
     2.  Trees(equivalent of directories) 
     3.  Commits 
     4.  Annotated Tags 
 
 Tags - Its like a label you put on a commit.
+       For example, you might tag a commit to mark a release.
+
+Annotated tag - It is a special kind of tag that carries additional
+                data(like a message, date of tag, creator of tag etc.)
+                It points to a commit.
+
+These 4 componenets for the entire "GIT object model."
