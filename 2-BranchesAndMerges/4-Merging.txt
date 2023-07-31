@@ -1,0 +1,6 @@
+A merge is just a commit, with one exception - it 
+has 2 parents. That's what makes it a merge.
+
+
+A commit in git usually has 1 parent but it 
+can have as many parents as you want.

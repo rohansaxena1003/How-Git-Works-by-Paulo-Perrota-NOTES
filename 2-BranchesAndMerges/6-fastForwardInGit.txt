@@ -1,0 +1,39 @@
+When you see the message of "Fast-Forward" on screen,
+git is bragging about being able to spare a few objects 
+in the object database and making your project's 
+history less complicated.
+
+Example-
+    Here's a step-by-step guide on how a fast-forward merge works:
+    1.  Assume you have a branch called feature-branch and want to 
+        merge it into the main branch.
+    2.  If no new commits have been made to the main branch since 
+        the feature-branch was created, you can perform a 
+        fast-forward merge. First, ensure you are on the main 
+        branch:
+            git checkout main
+    3.  Then, merge the feature-branch into main:
+            git merge feature-branch
+
+        If a fast-forward merge is possible, Git will move the main 
+        branch pointer to the latest commit of feature-branch. 
+        However, if there have been new commits on main since 
+        feature-branch was created, a fast-forward merge won't be 
+        possible, and Git will perform a regular merge, creating 
+        a new merge commit.
+    
+    In the case of pull requests, if the remote branch being 
+    merged into has not diverged, the pull request may also be 
+    automatically fast-forwarded when merged.
+
+    Remember to use git pull with care, especially if you're 
+    collaborating with others, as it can lead to unexpected 
+    changes in your local branch. 
+    
+    Always review the changes before performing any merges or 
+    pulls.
+
+
+
+
+

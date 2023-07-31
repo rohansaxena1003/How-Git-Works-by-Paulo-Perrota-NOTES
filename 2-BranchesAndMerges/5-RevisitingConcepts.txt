@@ -1,0 +1,39 @@
+References between commits are used to track history.
+All the other commits are used to track content.
+
+Git doesnt care about how commits are connected to
+each other. It just cares about trees and blobs, 
+i.e., the entire state of the project at the time 
+of the commit. Git uses this information to replace 
+the content of your working directory.
+
+Git doesnt care about which blob or tree was 
+introduced by which commit. When it stores the 
+commit, it just reuses objects that are already there,
+and it creates the objects that are not already 
+there.
+
+POINTS TO REMEMBER 
+1.  Don't get confused with trees and blobs. Git just 
+    goes into a commit and retrieves the trees and 
+    blobs from there. Nothing more complicated.
+
+2.  Git(mostly) DOESN'T care about the working area.
+    When you move to another commit, git adjusts or 
+    replaces the working area with the stuff from the 
+    object database.
+
+    Git mostly cares about the objects in the database,
+    not your working directory.
+
+    Objects in the database are immutable and persistent
+    while files in your working directory areas transient 
+    as they get.
+
+3.  Git is NOT reckless with your working area. It will 
+    give you a warning before overriding your files.
+    For ex. if you try to switch to a other branch but 
+    you have uncommitted changes, git will tell you that.
+
+    But other than that, your working area is the least 
+    important part of your project.
