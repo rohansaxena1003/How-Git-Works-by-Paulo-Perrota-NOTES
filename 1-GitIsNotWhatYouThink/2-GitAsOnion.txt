@@ -1,0 +1,18 @@
+Git has 4 layers and we will learn about each layer.
+
+    1.  Git is called "Distributed Revision Control System".
+    2.  Imagine git is not distributed at all. Imagine there 
+        is only one computer in the world and there is only 
+        one repository on that compter. So git becomes "Revision 
+        Control System, no distribution". This system still 
+        includes history, branches, merges etc.
+    3.  Lets forget about branches, merges, history etc. So now 
+        git becomes "Stupid Content tracker". It tracks files, 
+        directories.
+    4.  Now forget even about tracking files.Forget about the
+        notion of a commit. Forget about versioning. So now we see 
+        that git is just a "map", a simple structure that maps keys 
+        to values.
+
+    We will go inside out(4 to 1) and understand each layer of git 
+    in detail.

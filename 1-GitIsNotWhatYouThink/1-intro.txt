@@ -1,0 +1,23 @@
+The secret to understanding git is knowing about the conceptual model behind it and 
+not learning the commands.
+
+    Porcelain Commands  : High level user commands
+        git add 
+        git commit 
+        git push 
+        git pull 
+        git branch 
+        git switch 
+        git merge 
+        git rebase
+
+    Plumbing Commands : Low level Commands 
+        git cat-file 
+        git hash-object 
+        git count-objects 
+
+
+We are using the latest version git.
+
+In this module, we will talk about the inner 2 layers 
+of onion[git].

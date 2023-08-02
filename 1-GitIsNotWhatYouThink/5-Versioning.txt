@@ -1,0 +1,34 @@
+Most commits have a parent, except the first commit.
+
+If you change anything in a piece of content, then you get a whole
+new object with a new hash.
+
+Git is so efficient because it doesn't store things more than once.
+
+Trees and commit are really small, so even if they change its 
+not a big deal. The process is still quite efficient.
+
+Command-
+    git count-objects 
+    // 9 objects, 258 kilobytes
+
+GIT data storage 
+    Speaking of efficiency, you might be surprised that git 
+    stores a new blob everytime you change a file.
+
+    What if I have a huge file and only change a single line?
+        Will git store entirely new blob in this case and 
+        duplicate the rest of the file.Well , not really.
+
+        Git has another layer of optimizations to save more space.
+        For example as you keep working, adding content to the 
+        repository, git might decide to store only the difference 
+        between the two files or even compress multiple objects 
+        in the same physical file.
+
+
+Summary
+    To understand the git model, think of each commit, blob, or 
+    tree as just separate files that are hashed and stored in the 
+    database.
+    We can always assume that git always does the right thing.
