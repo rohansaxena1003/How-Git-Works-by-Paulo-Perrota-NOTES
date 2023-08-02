@@ -1,0 +1,25 @@
+The command git branch lists all the branches and the 
+current branch is marked by an asterick(*).
+
+HOW DOES GIT IDENTIFY THE CURRENT BRANCH ?  
+    Go to .git/HEAD 
+
+    The above command has the name of the current file.
+
+WHAT IS HEAD ? 
+    HEAD is just a reference to a branch.
+
+SWITCH BRANCH 
+    The command git switch <branchname> is used to change the 
+    current branch.
+    
+    1.  This means HEAD now points to this switched 
+        branch (The HEAD folder now contains the hash for this 
+        new branch.) 
+    
+    2.  Also, our working area is changed to the content pointed
+        at by the "new branch".
+
+    switch is specifically used for changing branches, unlike
+    checkout that also does other tasks.
+

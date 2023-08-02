@@ -1,0 +1,14 @@
+How to Find branches in the folder ?
+    We can kind hash keys for all the branches by going to 
+        .git/refs/heads
+
+    This path will take us to all the branches(hashes)
+
+What are branches ?
+    A branch is just a reference(pointer) to a commit.
+
+    Thats why the directory that contains branches is called 
+    "refs".
+
+    "Main" branch is just a branch like any other branch. It 
+    does not have any special staus.
