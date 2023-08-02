@@ -1,0 +1,5 @@
+Whenever you synchronize with a remote, git updates the 
+remote branches.
+Lets see how this synchronization happens in practice.
+
+We will be able to see uniqueness of SHA-1 hashes.

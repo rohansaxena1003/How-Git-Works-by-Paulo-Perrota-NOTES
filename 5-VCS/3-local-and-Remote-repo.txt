@@ -1,0 +1,13 @@
+code .git/config // This command gives the info about local 
+                 // and remote branches.
+
+Like a local branch, a remote branch is just a reference 
+to a commit.
+
+git show-ref <branch-name> // This command shows the 
+                           // occurrence of this name in 
+                           // local and remote repos.
+
+Whenever you synchronize with a remote, git updates the 
+remote branches.
+Lets see how this synchronization happens in practice.

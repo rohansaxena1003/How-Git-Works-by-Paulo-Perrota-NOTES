@@ -15,6 +15,7 @@ not learning the commands.
         git cat-file 
         git hash-object 
         git count-objects 
+        git show-ref <branchname>
 
 
 We are using the latest version git.

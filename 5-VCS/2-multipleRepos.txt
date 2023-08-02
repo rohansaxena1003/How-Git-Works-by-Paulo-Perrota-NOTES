@@ -1,0 +1,14 @@
+We use git clone command to copy a project from a remote repo to 
+our local computer.
+
+This command also the .git directory from the remote repo to the 
+local repo.
+
+Git clone only copies the main branch of the remote repo and we
+need to give special commands to copy other branches to our local
+repo.
+
+We can multiple repos(1 on cloud and multiple on local repos) to 
+have exactly the same content. All these repos are equally worthy 
+from a technical P.O.V but the remote repo is generally considered
+to be the main repo.
