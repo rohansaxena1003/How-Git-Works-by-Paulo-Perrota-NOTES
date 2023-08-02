@@ -1,0 +1,23 @@
+Fork - It's kind of like a clone but it's a remote clone.
+
+        We are cloning the project from someone else's 
+        github account to our own github account.
+
+
+UPSTREAM and PULL REQUESTS
+    Example-
+        We fork a project to our github account from someone else's 
+        account. Now we clone this forked project to our local repo.
+        Here the origin points at the remote repo of our forked 
+        repo and not the original project(that is somebody else's).
+        So here, we need to create another remote to the orginal 
+        project so that we can track the changes made by the original 
+        author. 
+        In this case, we use a github feature called "UPSTREAM".
+
+        So we can push changes to origin/main and track any changes 
+        to the original project by pulling from the remote repo.
+        We still can't push changes to the original project(upstream). So,
+        there's an alternative to it. We can send a message to the 
+        maintainers of upstream and ask them to pull our changes to their 
+        repo. This is  called a "PULL REQUEST".
