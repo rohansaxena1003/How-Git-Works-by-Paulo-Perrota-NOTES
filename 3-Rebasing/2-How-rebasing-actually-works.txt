@@ -1,0 +1,14 @@
+As we mentioned earlier, rebasing is done by detaching 
+the current branch from its base and moving it to the top 
+of the target branch.
+But, we know that commits are database objects and they 
+are immutable.
+So, how does rebasing actually work in practice ??
+    When you rebase, git makes copies of the commits.
+    It creates these new commits with exactly the same 
+    data except for their parents and except for any 
+    conflicts that you might have to fix during the rebase.
+
+Remember that REBASING is an operation that creates new commits.
+
+The original commits are garbage collected in most of the cases.

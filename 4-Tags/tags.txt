@@ -1,0 +1,36 @@
+TAGS 
+    A tag is like a label for a commit.
+    Annotated tags have addtional information like metadata.
+
+    SOME SYNTAX -
+        git tag <tag name> -a -m "Message" // Creates a tag with a message
+        git tag // gives list of tags 
+        git checkout < tag name > // switches to the tag name
+        
+        .git/refs/tags // we go to the tags folder
+        cat <tag name> // we get SHA-1 hash for the tag.
+        git cat-file -p <SHA-1 hash> // we get metadata for the tag.
+
+    A git tag is a reference. So, a git tag cannot contain data, just a name.
+
+ANNOTATED TAGS vs LIGHT-WEIGHT TAGS 
+    ANNOTATED TAGS 
+        ANNOTATED TAGS are a branch-like object that point to a tag object that
+        points to a commit.
+
+
+    LIGHT-WEIGHT TAGS 
+        LIGHT-WEIGHT TAGS just point to a commit because they don't need a place 
+        to put those addtional metadata, so it doesn't need a tag object. It just 
+        needs a name. 
+
+        They are almost identical to branches.
+
+
+BRANCHES vs LIGHT-WEIGHT TAGS
+    The only diiference between Light-weight tags and branches is that they are 
+    in different directories and git knows that it needs to treat them differently.
+
+    For example, if I am on a branch and I create a new commit, the branch will 
+    move to track that new commit but the tag will stsy attached to the original 
+    commit. So, BRANCHES move but TAGS don't move.

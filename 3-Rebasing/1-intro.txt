@@ -1,0 +1,11 @@
+Rebasing is not common in VCS(Version Control Systems). 
+Only a handful of VCS have it. Git is by far the most 
+popular VCS to have it.
+
+
+Rebase the current branch from its base and moves it 
+to the top of the target branch. Thats 
+why its called a 'rebase'. Like in merge, we might 
+have to solve conflicts to complete the rebase.
+
+A rebase can be fast-forwarded just like a merge.

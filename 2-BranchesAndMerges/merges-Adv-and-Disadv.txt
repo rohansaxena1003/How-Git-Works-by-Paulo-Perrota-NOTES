@@ -1,0 +1,13 @@
+MERGES
+    ADVANTAGES
+        1.  Merges never lie, i.e., they preserve history of the commits 
+            exactly as they occurred.
+
+
+    DISADVANTAGES
+        1.  Merges can be very complicating to understand especially in 
+            a large project. 
+        
+        2.  Also, git log doesn't give a clear picture of how the commits 
+            were made in the project. We need a git visualizing tool to 
+            to comprehend the project.

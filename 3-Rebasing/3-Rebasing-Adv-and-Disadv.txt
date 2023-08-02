@@ -1,0 +1,16 @@
+REBASING 
+    ADVANTAGES
+        1.  Rebasing helps to refactor the project history so that it always 
+            looks nice.
+            
+
+    DISADVANTAGES
+        1.  Rebasing is a destructive operation. It creates new commits and 
+            the original commits are garbage collected.
+
+        2.  It can cause unwanted side effects. 
+
+        3.  A scenario related to "DISTRIBUTION" makes rebasing less useful.
+
+        4.  Mindless rebasing can lead to trouble. So, when in doubt, just merge.
+        
