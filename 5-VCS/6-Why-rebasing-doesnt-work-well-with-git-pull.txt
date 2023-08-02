@@ -1,0 +1,5 @@
+Rebasing on our local repo and then using git pull leads to dupilcate and 
+orginal commits both being present in the repo and this creates a lot 
+of confusion.
+
+NEVER "REBASE" STUFF THAT HAS BEEN SHARED WITH OTHER REPOSITORIES.

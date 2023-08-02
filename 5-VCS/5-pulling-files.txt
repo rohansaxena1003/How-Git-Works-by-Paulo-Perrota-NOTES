@@ -1,0 +1,23 @@
+git pull command is a combination of 2 commands, i.e., a fetch followed by a merge.
+
+CASE 1-
+    SYNCHRONIZING TO A REMOTE REPO WHEN ONLY YOU ARE MAKING CHANGES TO A REMOTE REPO 
+        It is an easy case and we just need to push to the remote branch our local 
+        commits.
+
+CASE 2- 
+    SYNCHRONIZING TO A REMOTE REPO WHEN OTHERS ARE ALSO MAKING CHANGES TO THE SAME REPO 
+
+        WHAT TO DO ?????
+            1.  force a push by using git push -f 
+                    This is a very very bad idea because this command suggests git to 
+                    ignore what's there on the remote repo and just push your commit 
+                    to the remote repo thereby losing the data that was pushed by 
+                    someone else(on the remote repo).
+
+                    This doesn't really solve the commit but puts pressure on others 
+                    to solve the conflict.
+
+            2.  use git fetch and git merge together
+                    You fetch the changes from the remote.Then you merge them into 
+                    your own repo and then you push the result.
